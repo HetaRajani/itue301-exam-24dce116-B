@@ -1,0 +1,64 @@
+.navbar {
+  padding: 28px 24px 0;
+}
+
+.navbar__inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.navbar__brand {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--parchment);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.01em;
+}
+
+.navbar__brand-mark {
+  color: var(--gold);
+  font-size: 1.1em;
+}
+
+.navbar__brand-accent {
+  color: var(--gold);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 4px;
+  background: rgba(243, 234, 216, 0.08);
+  border: 1px solid rgba(243, 234, 216, 0.16);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: var(--parchment);
+  opacity: 0.75;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.navbar__link:hover {
+  opacity: 1;
+}
+
+.navbar__link--active {
+  opacity: 1;
+  background: var(--gold);
+  color: var(--ink);
+}

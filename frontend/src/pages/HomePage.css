@@ -1,0 +1,81 @@
+.home {
+  padding-top: 48px;
+  max-width: 640px;
+}
+
+.home__eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+
+.home__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4.5vw, 3rem);
+  line-height: 1.12;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+
+.home__lede {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 32px;
+  max-width: 52ch;
+}
+
+.home__actions {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.home__btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.home__btn--primary {
+  background: var(--ink);
+  color: var(--parchment);
+}
+
+.home__btn--secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+
+.home__stats {
+  display: grid;
+  gap: 18px;
+  border-top: 1px solid var(--paper-line);
+  padding-top: 28px;
+}
+
+.home__stat {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.home__stat-num {
+  font-family: var(--font-mono);
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.home__stat-label {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}

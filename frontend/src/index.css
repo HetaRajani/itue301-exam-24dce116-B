@@ -1,0 +1,72 @@
+:root {
+  /* --- Color tokens: "library card catalog" palette --- */
+  --ink: #1f2a3c;          /* deep navy ink, headings/nav */
+  --ink-soft: #445168;     /* secondary text */
+  --parchment: #f3ead8;    /* warm catalog-card paper */
+  --parchment-deep: #e8dcc3;
+  --ledger-green: #3d6b4f; /* "available" stamp */
+  --stamp-red: #a5432c;    /* "not available / overdue" stamp */
+  --gold: #b98a2e;         /* accent rule / borrowed */
+  --paper-line: #d8c9a8;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: var(--parchment);
+  background-image: linear-gradient(
+    180deg,
+    var(--ink) 0px,
+    var(--ink) 220px,
+    var(--parchment) 220px
+  );
+}
+
+.app-content {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

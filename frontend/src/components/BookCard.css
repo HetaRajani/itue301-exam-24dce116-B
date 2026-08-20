@@ -1,0 +1,76 @@
+.book-card {
+  position: relative;
+  background: #fffdf8;
+  border: 1px solid var(--paper-line);
+  border-radius: 4px;
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 168px;
+  box-shadow: 0 1px 0 rgba(31, 42, 60, 0.04);
+}
+
+.book-card__ledger-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--gold),
+    var(--gold) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  border-radius: 4px 4px 0 0;
+}
+
+.book-card__category {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.book-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.book-card__author {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.book-card__stamp {
+  align-self: flex-start;
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 1.5px solid currentColor;
+  transform: rotate(-2deg);
+}
+
+.book-card__stamp--available {
+  color: var(--ledger-green);
+  background: rgba(61, 107, 79, 0.08);
+}
+
+.book-card__stamp--unavailable {
+  color: var(--stamp-red);
+  background: rgba(165, 67, 44, 0.08);
+}
