@@ -19,8 +19,8 @@
   height: 4px;
   background: repeating-linear-gradient(
     90deg,
-    var(--gold),
-    var(--gold) 10px,
+    var(--blue),
+    var(--blue) 10px,
     transparent 10px,
     transparent 20px
   );

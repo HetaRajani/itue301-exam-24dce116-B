@@ -1,13 +1,17 @@
 :root {
-  /* --- Color tokens: "library card catalog" palette --- */
-  --ink: #1f2a3c;          /* deep navy ink, headings/nav */
-  --ink-soft: #445168;     /* secondary text */
-  --parchment: #f3ead8;    /* warm catalog-card paper */
-  --parchment-deep: #e8dcc3;
-  --ledger-green: #3d6b4f; /* "available" stamp */
-  --stamp-red: #a5432c;    /* "not available / overdue" stamp */
-  --gold: #b98a2e;         /* accent rule / borrowed */
-  --paper-line: #d8c9a8;
+  /* --- Color tokens: warm academic reading-room, professional blue accent --- */
+  --ink: #1c2b45;           /* deep academic navy, headings/body text */
+  --ink-soft: #54627c;      /* secondary text */
+  --parchment: #f7f2e6;     /* warm catalog-card paper */
+  --parchment-deep: #ece2c9;
+  --paper-line: #ddd0ae;
+
+  --blue: #2f6690;          /* primary professional accent */
+  --blue-deep: #1c3d57;     /* header / dark surfaces */
+  --blue-soft: #e7eff5;     /* light blue tint for chips/backgrounds */
+
+  --ledger-green: #3d6b4f;  /* "available" stamp */
+  --stamp-red: #a5432c;     /* "not available / overdue" stamp */
 
   --font-display: "Fraunces", "Georgia", serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
@@ -28,7 +32,7 @@ body,
 
 body {
   margin: 0;
-  background: var(--ink);
+  background: var(--parchment);
   color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
@@ -41,12 +45,6 @@ a {
 .app-shell {
   min-height: 100vh;
   background: var(--parchment);
-  background-image: linear-gradient(
-    180deg,
-    var(--ink) 0px,
-    var(--ink) 220px,
-    var(--parchment) 220px
-  );
 }
 
 .app-content {
@@ -60,7 +58,7 @@ a:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
 

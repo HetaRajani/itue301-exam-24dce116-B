@@ -1,5 +1,5 @@
 .books-page {
-  padding-top: 48px;
+  padding-top: 56px;
 }
 
 .books-page__eyebrow {
@@ -27,7 +27,8 @@
 
 .books-page__sub code {
   font-family: var(--font-mono);
-  background: rgba(31, 42, 60, 0.06);
+  background: var(--blue-soft);
+  color: var(--blue);
   padding: 2px 6px;
   border-radius: 3px;
 }

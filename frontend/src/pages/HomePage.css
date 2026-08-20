@@ -1,15 +1,20 @@
 .home {
-  padding-top: 48px;
+  padding-top: 56px;
   max-width: 640px;
 }
 
 .home__eyebrow {
+  display: inline-block;
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 0.75rem;
-  color: var(--ink-soft);
-  margin: 0 0 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-soft);
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin: 0 0 20px;
 }
 
 .home__title {
@@ -39,20 +44,31 @@
 .home__btn {
   text-decoration: none;
   padding: 12px 22px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   font-size: 0.95rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .home__btn--primary {
-  background: var(--ink);
-  color: var(--parchment);
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(28, 61, 87, 0.15);
+}
+
+.home__btn--primary:hover {
+  box-shadow: 0 4px 10px rgba(47, 102, 144, 0.28);
 }
 
 .home__btn--secondary {
   background: transparent;
   color: var(--ink);
-  border: 1.5px solid var(--ink);
+  border: 1.5px solid var(--paper-line);
+}
+
+.home__btn--secondary:hover {
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .home__stats {
@@ -70,7 +86,7 @@
 
 .home__stat-num {
   font-family: var(--font-mono);
-  color: var(--gold);
+  color: var(--blue);
   font-weight: 600;
   font-size: 0.85rem;
 }
