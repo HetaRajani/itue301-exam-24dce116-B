@@ -5,20 +5,19 @@ ITUE301 — Advanced Web Development Frameworks — Open-Book Practical Exam (Se
 A small library management system built with **React**, **Express.js**, and
 **MongoDB (Mongoose)**.
 
-> ⚠️ Before submitting: replace every `[your-roll-number]` / `[batch]`
-> placeholder, rename this repository to
-> `itue301-exam-[your-roll-number]-[batch]`, and update the GitHub URL below.
+**Roll Number:** 24DCE116 · **Batch:** B
+**Repository:** `itue301-exam-24dce116-B`
 
 ## 1. Project structure
-
 ```
-itue301-exam-[roll-number]-[batch]/
-├── frontend/        React app (Vite + React Router)
-├── backend/          Express API + Mongoose models
+itue301-exam-24dce116-B/
+├── frontend/ React app (Vite + React Router)
+├── backend/ Express API + Mongoose models
 ├── .env.example
 ├── .gitignore
 └── README.md
-```
+
+
 
 ## 2. Frontend setup and run
 
@@ -35,7 +34,7 @@ Pages:
 - `/books` — Book catalog, fetched live from the Express API (Task 4)
 - `/borrow` — Borrowing form (Task 2)
 
-> The frontend expects the backend to be running at `http://localhost:5000`
+> The frontend expects the backend to be running at **http://localhost:5050**
 > (see `API_BASE_URL` in `src/pages/BooksPage.jsx` and `src/pages/BorrowPage.jsx`).
 
 ## 3. Backend setup and run
@@ -47,7 +46,7 @@ cp .env.example .env   # then fill in MONGO_URI
 npm start               # or: node server.js
 ```
 
-The API runs at **http://localhost:5000**.
+The API runs at **http://localhost:5050**.
 
 ### REST endpoints (Task 3 — in-memory data)
 
@@ -59,9 +58,6 @@ The API runs at **http://localhost:5000**.
 
 Every request is logged by a custom `requestLogger` middleware in the format:
 
-```
-[METHOD] [PATH] [TIMESTAMP]
-```
 
 A global error-handling middleware (`middleware/errorHandler.js`) is registered
 last and returns structured JSON instead of a raw stack trace.
@@ -99,7 +95,7 @@ Set these in `backend/.env` (see `backend/.env.example`):
 
 | Variable    | Description                                   |
 |-------------|------------------------------------------------|
-| `PORT`      | Port for the Express server (default `5000`)   |
+| `PORT`      | Port for the Express server (default `5050`)   |
 | `MONGO_URI` | MongoDB connection string (used by Task 5)      |
 
 `.env` is git-ignored — only `.env.example` is committed.
@@ -113,4 +109,3 @@ Set these in `backend/.env` (see `backend/.env.example`):
 | Task 3 — Express API + middleware | `backend/server.js`, `backend/routes/*`, `backend/middleware/*` |
 | Task 4 — API consumption in React | `frontend/src/pages/BooksPage.jsx` |
 | Task 5 — Mongoose schemas & validation | `backend/models/*`, `backend/mongoDemo.js`, `backend/utils/formatMongooseError.js` |
-# itue301-exam-24dce116-B
